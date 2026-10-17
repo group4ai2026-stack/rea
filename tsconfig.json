@@ -1,29 +1,27 @@
 {
   "compilerOptions": {
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "exactOptionalPropertyTypes": true,
-    "forceConsistentCasingInFileNames": true,
-    "lib": ["ES2023"],
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noUncheckedIndexedAccess": true,
-    "outDir": "dist",
-    "rootDir": ".",
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
     "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
     "strict": true,
-    "target": "ES2023",
-    "types": ["node"],
-    "verbatimModuleSyntax": true
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src/**/*.ts",
-    "tests/**/*.ts",
-    "vitest.config.ts",
-    "docs/.vitepress/config.ts"
-  ],
-  "exclude": ["dist", "node_modules"]
+    "src/main.tsx",
+    "src/App.tsx",
+    "src/components/**/*",
+    "src/data/**/*",
+    "src/types/**/*",
+    "src/views/**/*",
+    "src/utils/**/*"
+  ]
 }

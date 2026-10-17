@@ -1,0 +1,6 @@
+{
+  "name": "REA - Reverse Engineer Anything",
+  "description": "Comprehensive reverse engineering platform for native binaries, JavaScript/Electron apps, .NET CIL, Android APKs, WebAssembly, EVM bytecode, SQLite databases, and packet captures with an Evidence Ledger.",
+  "permissions": [],
+  "capabilities": []
+}
